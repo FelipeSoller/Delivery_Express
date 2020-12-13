@@ -15,7 +15,7 @@ function OrderForm({ onSubmit }) {
         setStartPoint(startPoint);
       };
     
-      const handleChangeEndPoint = endPoint => {
+    const handleChangeEndPoint = endPoint => {
         setEndPoint(endPoint);
       };
 

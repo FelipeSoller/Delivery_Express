@@ -16,6 +16,7 @@ function OrderItem({ order }) {
             <div className="address-info">
             <p>{order.startPoint}</p>
             <p>{order.endPoint}</p>
+            <a target="_blank" rel="noopener noreferrer" href={`https://www.google.com.br/maps/dir/${order.startPoint}/${order.endPoint}`}>Ver rotas no Google Maps</a>
             </div>            
         </li>
     )

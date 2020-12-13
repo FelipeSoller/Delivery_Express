@@ -8,6 +8,7 @@ import './App.css';
 
 import OrderItem from './components/OrderItem';
 import OrderForm from './components/OrderForm';
+import { GoogleMapsAPI } from './services/ClientConfig';
 
 function App() {
   const [orders, setOrders] = useState([]);  
@@ -49,5 +50,5 @@ function App() {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ('AIzaSyA4EBm1Fh3jJU1JuxrWqW1H7nC_Yje_KEM')
+  apiKey: (GoogleMapsAPI)
 })(App)
