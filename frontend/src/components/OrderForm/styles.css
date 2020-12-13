@@ -38,6 +38,11 @@ aside form .input-block input {
     border-bottom: 1px solid #eee;
 }
 
+aside form .input-block input::placeholder {
+    color: rgba(163, 163, 163, 0.4);
+    font-weight: bold;
+}
+
 aside form button[type=submit] {
     width: 100%;
     border: 0;
@@ -55,3 +60,4 @@ aside form button[type=submit] {
 aside form button[type=submit]:hover {
     background: rgb(21, 139, 31);
 }
+

@@ -10,20 +10,16 @@ module.exports = {
     async create(request, response) {
         const {
             name,
-            delivery_date,
-            latitude,
-            longitude
-        } = request.body;        
-    
-        const location = {
-            type: 'Point',
-            coordinates: [longitude, latitude],
-        }
+            inputDate,
+            startPoint,
+            endPoint
+        } = request.body;   
     
         const order = await DeliveryOrder.create({
             name,
-            delivery_date,            
-            location
+            inputDate,            
+            startPoint,
+            endPoint
         })
     
         return response.json(order);
